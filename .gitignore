@@ -1,0 +1,7 @@
+/dataset
+/flaskr/dataset/
+/venv
+/vectors
+
+__pycache__/
+
