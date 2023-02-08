@@ -25,4 +25,3 @@ def search(index, vector, all_paths, k):
         new_path = all_paths[i].replace('/content/drive/MyDrive/TruyvanDpt/test', '../static')
         res_paths = np.append(res_paths, new_path)
     return (D[0], res_paths)
-

@@ -29,7 +29,8 @@ def home(model = None):
             file.save(save_path)
             model = get_extract_model()
             search_vector = extract_vector(model, save_path)
-            D, I = si.search(index, search_vector, all_paths, 4)
+            q = int(request.form.get("quantity"))
+            D, I = si.search(index, search_vector, all_paths, q)
             return render_template('home.html', img_name=filename, d=D, images=I)
 
         return render_template('home.html')
